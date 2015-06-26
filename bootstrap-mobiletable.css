@@ -1,5 +1,4 @@
 /*
-
 Author: Matthieu Riolo <matthieu.riolo@gmail.com>
 Created: 2015-06-26
 URL: www.ocsource.ch
@@ -35,8 +34,14 @@ License: GPL
 		overflow-x: hidden;	
 	}
 
-  /* remove unnecessary borders */
-	.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  	/* remove unnecessary borders */
+	.table > thead > tr > th,
+	.table > tbody > tr > th,
+	.table > tfoot > tr > th,
+	.table > thead > tr > td,
+	.table > tbody > tr > td,
+	.table > tfoot > tr > td,
+	.table > tbody > tr:last-child > td:last-child {
 		border: none;
 	}
   
