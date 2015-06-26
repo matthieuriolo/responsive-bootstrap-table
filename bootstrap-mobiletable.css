@@ -7,8 +7,13 @@ License: GPL
 
 
 @media (max-width:768px) {
-  /* removing table display */
-  .table, .table thead, .table th, .table tbody, .table tr, .table td {
+  	/* removing table display */
+  	.table,
+  	.table thead,
+  	.table th,
+  	.table tbody,
+  	.table tr,
+  	.table td {
 		display: block;
 	}
 
@@ -17,7 +22,7 @@ License: GPL
 		position: relative;
 	}
   
-  /* place the header on the left */
+	/* place the header on the left */
 	.table thead {
 		width: 50%;
 	}
@@ -41,17 +46,17 @@ License: GPL
 	.table > thead > tr > td,
 	.table > tbody > tr > td,
 	.table > tfoot > tr > td,
-	.table > tbody > tr:last-child > td:last-child {
+	.table > tbody > tr:last-child {
 		border: none;
 	}
   
-  /* add borders for every "row" */
-	.table > tbody > tr > td:last-child {
+  	/* add borders for every "row" */
+	.table > tbody > tr {
 		border-bottom: 1px solid #DDD;
 	}
 
   
-  /* ensure fields have a one line height or cut them else */
+  	/* ensure fields have a one line height or cut them else */
 	.table > tbody > tr > td,
 	.table > thead > tr > th {
 	    text-align: left;
