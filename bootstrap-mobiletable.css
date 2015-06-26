@@ -15,8 +15,8 @@
 	}
   
   
-	.table thead + /* make tbody absolute if there is a thead */
-	.table tbody { /* place the body on the right and make it scrollable */
+	.table thead ~ /* make tbody absolute if there is a thead */
+	tbody { /* place the body on the right and make it scrollable */
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -35,10 +35,12 @@
 	.table > tbody > tr > td:last-child {
 		border-bottom: 1px solid #DDD;
 	}
+
   
   /* ensure fields have a one line height or cut them else */
 	.table > tbody > tr > td,
 	.table > thead > tr > th {
+	    text-align: left;
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
