@@ -1,0 +1,46 @@
+@media (max-width:768px) {
+  /* removing table display */
+  .table, .table thead, .table th, .table tbody, .table tr, .table td {
+		display: block;
+	}
+
+	.table {
+		overflow: hidden;
+		position: relative;
+	}
+  
+  /* place the header on the left */
+	.table thead {
+		width: 50%;
+	}
+  
+  
+	.table thead + /* make tbody absolute if there is a thead */
+	.table tbody { /* place the body on the right and make it scrollable */
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		bottom: 0px;
+		width: 50%;
+		overflow-y: auto;
+		overflow-x: hidden;	
+	}
+
+  /* remove unnecessary borders */
+	.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+		border: none;
+	}
+  
+  /* add borders for every "row" */
+	.table > tbody > tr > td:last-child {
+		border-bottom: 1px solid #DDD;
+	}
+  
+  /* ensure fields have a one line height or cut them else */
+	.table > tbody > tr > td,
+	.table > thead > tr > th {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
